@@ -1,9 +1,36 @@
+.home{
+	text-align: center;
+	background-image: url("../images/dice.jpg");
+	background-size: cover;
+}
+footer{
+	margin-top: 420px;
+	background-color: white;
+	height: 50px;
+}
+.easy{
+	background-image: url("");
+}
+h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+h1{
+  margin-top: 20px;
+  font-family: 'Tangerine', serif;
+  font-size: 90px;
+  color: white;
+}
 #heading{
  clear: left;
 }
-
+#dice1{
+margin-left: 50%;	
+}
+#dice2{
+margin-left: 50%;	
+}
 div.dice{
-	float: left;
 	width: 32px;
 	background: #F5F5F5;
 	border: #999 1px solid;
@@ -12,4 +39,36 @@ div.dice{
 	text-align: center;
 	margin: 5px;
 
+}
+button{
+margin-left: 50%;	
+}
+header{
+	text-align: center;
+right: 0;
+margin: 1em;
+}
+nav{
+	height: 70px;
+}
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+nav li{
+display: inline-block;
+margin: 1em;
+}
+nav a{
+font-weight: 900;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 15px;
+padding: .5em;
+color:#FFF;
+}
+nav a:hover,
+nav a:focus{
+color: #DDD;
 }
