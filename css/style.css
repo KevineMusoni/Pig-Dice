@@ -6,13 +6,37 @@
 	src: url("../fonts/my game.ttf");
 	font-family: my game;
 }
-
 .home{
 	text-align: center;
 	background-image: url("../images/dice5.jpeg");
 	background-size: cover;
 }
 
+#box{
+  width: 500px;
+  overflow: hidden;
+  background-color: grey;
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+
+}
+.close{
+	font-size: 20px;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	background: black;
+	border-radius: 20px;
+	display: inline-block;
+}
 .easy{
 	background-image: url("");
 }
