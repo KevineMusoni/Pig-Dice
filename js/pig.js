@@ -4,17 +4,17 @@ $(document).ready(function() {
 		console.log("init");
 		var dice1 = document.getElementById("dice1");
 		var dice2 = document.getElementById("dice2");
-		var heading = document.getElementById("heading");
+		var result = document.getElementById("result");
 		var d1 = Math.floor(Math.random() * 6) + 1;
 		var d2 = Math.floor( Math.random() * 6) + 1;
 		var dice_total = d1 + d2;
 
 		dice1.innerHTML = d1;
 		dice2.innerHTML = d2;
-		heading.innerHTML = "You have rolled" + dice_total+ ".";
+		result.innerHTML = "You have rolled" + dice_total+ ".";
 
 		if(d1 == d2){
-			heading.innerHTML += "Double! another turn!"
+			result.innerHTML += "Double! another turn!"
 	     }
 	 }
 

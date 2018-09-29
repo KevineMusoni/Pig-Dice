@@ -38,19 +38,37 @@
 	display: inline-block;
 }
 .easy{
-	background-image: url("");
+	background-image: url("../images/dice6.jpeg");
 }
-h2{
+.title2{
+	font-family: my game;
 	text-align: center;
 	margin-bottom: 50px;
+	font-size: 60px;
+	letter-spacing: 15px;
+	text-decoration: underline;
 }
 h1{
   font-family:Vermin Vibes;
   font-size: 90px;
   color: black;
 }
-#heading{
+#result{
  clear: left;
+ text-align: center;
+ text-transform: uppercase;
+border-width: 2px;
+border-style: solid;
+padding: .5em 1.75em;
+color: white;
+border-color: grey;
+border-radius: 8px;
+margin-top: 80px;
+height: 150px;
+width: 300px;
+margin-left: 40%;
+background-color: rgba(0,0,0, .5);
+box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 #dice1{
 margin-left: 50%;	
@@ -71,7 +89,7 @@ div.dice{
 button{
 margin-left: 50%;	
 }
-nav{
+/*nav{
 	height: 20px;
 }
 nav ul{
@@ -94,7 +112,7 @@ color:black;
 nav a:hover,
 nav a:focus{
 color: grey;
-}
+}*/
 .button{
 display: inline-block;/*avoids merging*/
 font-size: 1.15rem;
@@ -111,6 +129,7 @@ color: black;
 border-color: black;
 border-radius: 8px;
 margin-top: 170px;
+cursor: pointer;
 }
 .button-accent:hover,
 .button-accent:focus{
