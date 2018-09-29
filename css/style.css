@@ -1,13 +1,18 @@
+@font-face{
+	src: url("../fonts/Vermin Vibes V.otf");
+	font-family: Vermin Vibes;
+}
+@font-face{
+	src: url("../fonts/my game.ttf");
+	font-family: my game;
+}
+
 .home{
 	text-align: center;
-	background-image: url("../images/dice.jpg");
+	background-image: url("../images/dice5.jpeg");
 	background-size: cover;
 }
-footer{
-	margin-top: 420px;
-	background-color: white;
-	height: 50px;
-}
+
 .easy{
 	background-image: url("");
 }
@@ -16,10 +21,9 @@ h2{
 	margin-bottom: 50px;
 }
 h1{
-  margin-top: 20px;
-  font-family: 'Tangerine', serif;
+  font-family:Vermin Vibes;
   font-size: 90px;
-  color: white;
+  color: black;
 }
 #heading{
  clear: left;
@@ -43,13 +47,8 @@ div.dice{
 button{
 margin-left: 50%;	
 }
-header{
-	text-align: center;
-right: 0;
-margin: 1em;
-}
 nav{
-	height: 70px;
+	height: 20px;
 }
 nav ul{
 margin: 0;
@@ -66,9 +65,31 @@ text-decoration: none;
 text-transform: uppercase;
 font-size: 15px;
 padding: .5em;
-color:#FFF;
+color:black;
 }
 nav a:hover,
 nav a:focus{
-color: #DDD;
+color: grey;
+}
+.button{
+display: inline-block;/*avoids merging*/
+font-size: 1.15rem;
+text-decoration:none;
+text-transform: uppercase;
+border-width: 2px;
+border-style: solid;
+padding: .5em 1.75em;
+font-family: my game;
+font-size: 30px;
+}
+.button-accent{
+color: black;
+border-color: black;
+border-radius: 8px;
+margin-top: 170px;
+}
+.button-accent:hover,
+.button-accent:focus{
+background:#C0C0C0;
+color: black;
 }
