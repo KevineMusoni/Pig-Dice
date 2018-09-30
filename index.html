@@ -5,27 +5,63 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
 		<title>Pig Dice</title>
+		<!-- Font Awesome Icon Library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 	</head>
 	<body class="home">
 		<h1>Pig Dice</h1>
-		<a onclick="pop()" class="button button-accent">start game</a>
+		<a  class="button button-accent" id="startbtn">start game</a>
 		
 		<div id="box">
 			<h3>Pick Level</h3>
-			<a class="close"> close</a>
+			<form id ="levelform" action="" method="get">
+				<span onmouseover="easychangecolor(this)" class="fa fa-star easy" id="easylevel" style="color:black;">Easy</span>
+				<span onmouseover="hardchangecolor(this)" class="fa fa-star hard" id="hardlevel" style="color:black;s">Hard</span>
+				<input type="hidden" name="level" id="level" value="">
+			</form>
+			
+			<br>
+			<a class="close" id ="closebtn"> close</a>
 		</div>
 		<script type="text/javascript">
-			var c = 0;
-		 function pop(){
-			if (c = 0) {
-				document.getElementById("box").style.display = "block";
-			c = 1;
-			}
-			else{
-				document.getElementById("box").style.display = "none";
-			c = 0;
-			}
+			
+		
+			
+				var popup = document.getElementById("box");
+			
+				var btn = document.getElementById("startbtn");
+				btn.onclick = function (){
+		popup.style.display = "block";
+				}
+		var close = document.getElementById("closebtn");
+		close.onclick = function(){
+		popup.style.display = "none";
 		}
+				var easyspan = document.getElementsByClassName("fa fa-star easy")[0];
+		easyspan.onclick = function (){
+		alert("You picked easy");
+		level.value = "easy";
+		location.href = "easy.html";
+		}
+		var hardspan = document.getElementsByClassName("fa fa-star hard")[0];
+				hardspan.onclick = function (){
+					alert("You picked hard level");
+		level.value = "hard";
+		location.href = "#";
+		}
+		var level = document.getElementById("level");
+			// easyspan.addEventListener("click", leveleasy);
+			// hardspan.addEventListener("click", levelhard);
+				function easychangecolor(){
+					easyspan.style.color = "yellow";
+				}
+		
+		function hardchangecolor(){
+					hardspan.style.color = "green";
+				}
+			
+			
 		</script>
 	</body>
 	<!-- <script type="text/javascript" src="js/jquery-3.3.1.js"></script> -->
