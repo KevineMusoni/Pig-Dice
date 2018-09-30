@@ -137,3 +137,7 @@ color: black;
 .checked {
 color: blue;
 }
+.player{
+	text-align: center;
+	font-size: 20px;
+}
