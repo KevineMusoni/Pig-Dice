@@ -27,7 +27,7 @@ var d2 = Math.floor( Math.random() * 6) + 1;
 var dice2_total = d2;
 dice1.innerHTML = d1;
 dice2.innerHTML = d2;
-result2.innerHTML = "You have rolled" + dice_total2+ ".";
+result2.innerHTML = "You have rolled" + dice2_total+ ".";
 if(d1 == d2){
 result2.innerHTML += "Double! another turn!"
 }
